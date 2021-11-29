@@ -1,0 +1,21 @@
+{
+  "name": "design-patterns-in-javascript",
+  "version": "1.0.0",
+  "description": "Design Patterns in JavaScript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivnosing/design-patterns-javascript-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivnosing/design-patterns-javascript-course/issues"
+  },
+  "homepage": "https://github.com/Ivnosing/design-patterns-javascript-course#readme",
+  "devDependencies": {
+    "eslint": "^8.3.0"
+  }
+}
