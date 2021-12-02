@@ -1,22 +1,22 @@
-class Word {
-  constructor(value) {
-    this.value = value;
+class WordToken {
+  constructor() {
     this.capitalize = false;
   }
 }
 
 class Sentence {
   constructor(plainText) {
-    this.words = plainText.split(' ').map(word => new Word(word));
+    this.words = plainText.split(' ');
+    this.tokens = {};
   }
 
   at(index) {
-    return this.words[index];
+    return (this.tokens[index] = new WordToken());
   }
 
   toString() {
     return this.words
-      .map(word => (!word.capitalize ? word.value : word.value.toUpperCase()))
+      .map((word, index) => !this.tokens[index]?.capitalize ? word : word.toUpperCase())
       .join(' ');
   }
 }
